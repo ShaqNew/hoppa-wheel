@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  font-style: normal;
+  font-size: small;
+  font-weight: 400;
+  &__wheel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 256px;
+    width: 256px;
+  }
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

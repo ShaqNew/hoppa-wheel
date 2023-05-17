@@ -1,0 +1,25 @@
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    padding: 0 40px;
+    margin: auto 0;
+    &__popup {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        margin-left: 450px;
+        transition: all 1s;
+        opacity: 0;
+    }
+}
+
+.selected {
+    margin-left: 530px;
+    transition: all 1s;
+    opacity: 1;
+}
