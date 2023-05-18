@@ -32,13 +32,11 @@ const Choice = (props:any) => {
 
     
     return (
-        // <div className={`${placement}`} onClick={()=>{swapChoices(choice)}}>
-            <button className={`choice ${placement}`} onClick={()=>{swapChoices(choice)}}>
+            <button className={`choice ${placement}`} data-testid="choice-button" onClick={()=>{swapChoices(choice)}}>
                 {/* <img src={icon} alt={name}/> */}
                 {/* <Image src={icon} alt={name}/> */}
-                <p className={`choice__text ${textPlacement}`}>{name}</p>
+                <p className={`choice__text ${textPlacement}`} data-testid="choice-button-text">{name}</p>
             </button>
-        // </div>
     )
 }
 

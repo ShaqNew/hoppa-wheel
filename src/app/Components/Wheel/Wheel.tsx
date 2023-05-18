@@ -9,19 +9,19 @@ const Wheel = () => {
   const swapChoices = (choice: any) => {
     // If the selected object is already in the first postion don't do anything
     if (choice.position > 1) {
+        // Reassign each choice its new position
         setChoicesState((prevObjects) => {
         const newObjects = [...prevObjects];
 
-        // Find the the selected object
-        let selectedObj = newObjects.filter(
-          (obj) => obj.position === choice.position
-        )[0];
+        // Create a new reordered temp array with the choicen object at the front
+        const index = choicesState.indexOf(choice);
+        let reorderedArr = [...choicesState.slice(index), ...choicesState.slice(0, index)]
 
-        // swap the selected object's position with object in the first position
-        let firstObject = newObjects.filter((obj) => obj.position === 1)[0];
-        firstObject.position = selectedObj.position;
-        selectedObj.position = 1;
-        console.log("ARR: ", choicesState)
+        // assign new position values sequantially according to the reordered array
+        for(let i = 0; i<reorderedArr.length; i++){
+            const newObjectsIndex = newObjects.indexOf(reorderedArr[i])
+            newObjects[newObjectsIndex].position = i+1
+        }
 
         return newObjects;
       });
@@ -30,7 +30,7 @@ const Wheel = () => {
   
 
   return (
-    <div className="wheel">
+    <div className="wheel" data-testid="wheel-div">
       {choicesState.map((choice, index) => (
         <Choice
           key={index}
