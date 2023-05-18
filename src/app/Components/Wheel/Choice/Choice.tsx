@@ -33,6 +33,7 @@ const Choice = (props:any) => {
     
     return (
             <button className={`choice ${placement}`} data-testid="choice-button" onClick={()=>{swapChoices(choice)}}>
+            {/* I had trouble adding the icons properly */}
                 {/* <img src={icon} alt={name}/> */}
                 {/* <Image src={icon} alt={name}/> */}
                 <p className={`choice__text ${textPlacement}`} data-testid="choice-button-text">{name}</p>

@@ -1,8 +1,8 @@
 
-import CameraVector from "./CameraVector.png"
-import CrosshairsVector from "./CrosshairsVector.png"
-import DropVector from "./DropVector.png"
-import SpeakerVector from "./SpeakerVector.png"
+import CameraVector from "./icons/CameraVector.png"
+import CrosshairsVector from "./icons/CrosshairsVector.png"
+import DropVector from "./icons/DropVector.png"
+import SpeakerVector from "./icons/SpeakerVector.png"
 
 
 export const choicesList = [

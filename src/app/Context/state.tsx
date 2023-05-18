@@ -1,10 +1,8 @@
 "use client"; // This is a client component
-// src/context/state.js
 import { StaticImageData } from "next/image";
 import { createContext, SetStateAction, Dispatch } from "react";
 import { choicesList } from "../utils/choices";
 
-// const AppContext = createContext();
 
 interface IChoice {
   id: number;

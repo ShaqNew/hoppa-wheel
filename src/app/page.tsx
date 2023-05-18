@@ -1,5 +1,4 @@
 "use client"; // This is a client component
-import Image from "next/image";
 import { useState } from "react";
 import ChoicesContext from "./Context/state";
 import Wheel from "./Components/Wheel/Wheel";

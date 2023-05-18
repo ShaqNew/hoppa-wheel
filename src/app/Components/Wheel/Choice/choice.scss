@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    // left:0px;
     width: 90px;
     height: 90px;
     border-radius: 45px;
@@ -22,32 +21,24 @@
     position: absolute;
     display: flex;
     margin-bottom: 200px;
-    // bottom: 100px;
-    // z-index: 1;
     transition: all 1s;
 }
 .second-choice{
     position: absolute;
     display: flex;
     margin-left: 200px;
-    // left: 100px;
-    // z-index: 10;
     transition: all 1s;
 }
 .third-choice{
     position: absolute;
     display: flex;
     margin-top: 200px;
-    // top: 100px;
-    // z-index: 50;
     transition: all 1s;
 }
 .fourth-choice{
     position: absolute;
     display: flex;
     margin-right: 200px;
-    // right: 100px;
-    // z-index: 100;
     transition: all 1s;
     &__text{
         margin-right: 240px;
