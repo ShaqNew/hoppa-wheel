@@ -7,10 +7,13 @@ const Wheel = () => {
   const { choicesState, setChoicesState } = useContext(ChoicesContext);
 
   const swapChoices = (choice: any) => {
+    console.log("Running", choicesState)
     // If the selected object is already in the first postion don't do anything
     if (choice.position > 1) {
+        console.log("position > 1")
         // Reassign each choice its new position
         setChoicesState((prevObjects) => {
+            console.log("setting new state")
         const newObjects = [...prevObjects];
 
         // Create a new reordered temp array with the choicen object at the front
@@ -22,6 +25,8 @@ const Wheel = () => {
             const newObjectsIndex = newObjects.indexOf(reorderedArr[i])
             newObjects[newObjectsIndex].position = i+1
         }
+
+        console.log("changed order: ", reorderedArr)
 
         return newObjects;
       });

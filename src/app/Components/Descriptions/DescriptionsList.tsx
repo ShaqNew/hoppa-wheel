@@ -7,7 +7,7 @@ const DescriptionsList = () => {
     const { choicesState, setChoicesState } = useContext(ChoicesContext);
 
     return (
-        <div className="detailsList">
+        <div className="descriptionsList" data-testid="descriptionsList-div">
             {choicesState.map((choice, index) => (
                 <Description key={index} choice={choice}/>
             ))}

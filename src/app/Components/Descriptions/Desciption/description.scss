@@ -18,7 +18,12 @@
     }
 }
 
+// Adding a border to the selected description to save time
 .selected {
+    border: 1px solid black
+}
+
+.selected-popup {
     margin-left: 530px;
     transition: all 1s;
     opacity: 1;
